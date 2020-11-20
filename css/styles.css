@@ -72,17 +72,7 @@ img.align {
 	width: 240px;
 	height: 250px;
 	border-radius: 50%;
-	margin-top: 210px;
-}
-
-@media (max-width: 1200px) {
-	.intro {
-		height: 50rem;
-	}
-
-	img.align {
-		margin-top: 17vh;
-	}
+	margin-top: 180px;
 }
 
 .intro p {
@@ -94,6 +84,12 @@ img.align {
 	background: #F7F6F0;
 	width: 100%;
 	height: 100%;
+}
+
+@media (max-width: 600px) {
+	.projects {
+		padding: 10px 0 40px;
+	}
 }
 
 .projects h2 {
@@ -108,7 +104,7 @@ img.align {
 
 @media (max-width: 600px){
 	.project-tile {
-		margin: 0px;
+		margin: 20px 0;
 	}
 }
 
