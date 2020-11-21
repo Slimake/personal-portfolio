@@ -5,6 +5,7 @@ html, body, figure, figcaption, header, nav, main, section, article, footer, ul,
 }
 
 body {
+	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5rem;
 	text-align: center;
@@ -22,20 +23,26 @@ img {
 /* Navbar Section*/
 
 #navbar {
-	display: flex;
-	justify-content: flex-end;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	background-color: #d9ecf2;
-	z-index: 10;
+}
+
+#navbar ul {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+}
+
+#navbar li {
+	padding: 2rem;
 }
 
 #navbar a {
 	color: #212121;
 	font-weight: 900;
-	padding: 2rem;
 	text-decoration: none;
 }
 
@@ -138,20 +145,32 @@ footer {
 /* Media Query Section */
 
 @media (max-width: 769px) {
-	#navbar {
+	#navbar ul {
 		display: flex;
 		justify-content: center;
 	}
 } 
 
 @media (max-width: 400px) {
-	#navbar a {
+	#navbar li {
 		padding: 2rem 1rem;
 	}
 
 	.project-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 2rem;
+	}
+} 
+
+@media (max-width: 330px) {
+	#navbar li {
+		padding: 2rem .8rem;
+	}
+
+	.project-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 		grid-gap: 2rem;
 	}
 } 
