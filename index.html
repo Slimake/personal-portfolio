@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Required Meta Tags -->
+	<meta charset="UTF-8">
+	<meta name="description" content="Portfolio">
+	<meta name="keywords" content="Afeso, Ajakaiye, Portfolio">
+	<meta name="author" content="Afeso Ajakaiye">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Portfolio Page</title>
+
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-	<title>Portfolio Page</title>
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/5c38d15388.js" crossorigin="anonymous"></script>
 </head>
 <body>
   
+  	<!-- Navbar Section -->
 	<nav id="navbar">
-		<ul>
-			<li><a href="#welcome-section">About</a></li>
-			<li><a href="#projects">Project</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<a href="#welcome-section">About</a>
+			<a href="#projects">Project</a>
+			<a href="#contact">Contact</a>
 		</ul>
 	</nav>
 	
+	<!-- Main Section -->
 	<main>
+
+		<!-- Intro Section -->
+
 		<section id="welcome-section" class="intro">
 			<img class="align" src="images/afeso.jpg" alt="my pix">
 			<h1>Welcome, i'm Afeso</h1>
 			<p>a web developer</p>
 		</section>
-		<section id="projects" class="projects">
+
+		<!-- Project Section -->
+
+		<section id="projects">
 			<h2>These are my responsive web design projects...</h2>
-			<article class="project-tile">
-				<figure><a href="https://codepen.io/slimake/full/ERvOzq" target="_blank"><img class="center" src="images/project1.png" alt="project pix"><figcaption>Tribute Page</figcaption></a>
-				</figure>
-			</article>
-			<article class="project-tile">
-				<figure><a href="https://codepen.io/slimake/full/VddxYr" target="_blank"><img class="center" src="images/project2.png" alt="project pix"><figcaption>Survey Form</figcaption></a>
-				</figure>
-			</article>
-			<article class="project-tile">
-				<figure><a href="https://codepen.io/slimake/full/LrJEpb" target="_blank"><img class="center" src="images/project3.png" alt="project pix"><figcaption>Product Landing Page</figcaption></a>
-				</figure>
-			</article>
-			<article class="project-tile">
-				<figure><a href="https://codepen.io/slimake/full/zLrMbo" target="_blank"><img class="center" src="images/project4.png" alt="project pix"><figcaption>Technical Documentation Page</figcaption></a>
-				</figure>
-			</article>
+			<div class="project-grid">
+				<a href="https://codepen.io/slimake/full/ERvOzq" target="_blank">
+					<img class="project-image" src="images/project1.png" alt="project pix">
+					<p>Tribute Page</p>
+				</a>
+				<a href="https://codepen.io/slimake/full/VddxYr" target="_blank">
+					<img class="project-image" src="images/project2.png" alt="project pix">
+					<p>Survey Form</p>
+				</a>
+				<a href="https://codepen.io/slimake/full/LrJEpb" target="_blank">
+					<img class="project-image" src="images/project3.png" alt="project pix">
+					<p>Product Landing Page</p>
+				</a>
+				<a href="https://codepen.io/slimake/full/zLrMbo" target="_blank">
+					<img class="project-image" src="images/project4.png" alt="project pix">
+					<p>Technical Documentation Page</p>
+				</a>
+			</div>
 		</section>
 
-		<section id="contact" class="contact">
+		<!-- Contact Section -->
+
+		<section id="contact">
 			<h3>You can reach me through these Mediums</h3>
-			<ul>
-				<a id="profile-link" href="https://twitter.com/slimake" target="_blank"><li><img src="images/twitter12.png" alt="twitter logo"></li></a>
-				<a id="profile-link" href="https://www.facebook.com/slimake" target="_blank"><li><img src="images/facebook12.png" alt="facebook logo"></li></a>
-				<a id="profile-link" href="mailto:slimakepal@gmail.com" target="_blank"><li><img src="images/email.jpg" alt="email logo"></li></a>
-				<a id="profile-link" href="tel:+0123456789"><li><img src="images/call.png"></li></a>
-			</ul>	
+			<a id="profile-link" href="https://twitter.com/slimake" target="_blank">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a id="profile-link" href="https://www.facebook.com/slimake" target="_blank">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a id="profile-link" href="mailto:slimakepal@gmail.com" target="_blank">
+				<i class="fas fa-envelope"></i>
+			</a>
+			<a id="profile-link" href="tel:+0123456789">
+				<i class="fas fa-phone-alt"></i>
+			</a>
 		</section>
 	</main>
+
+	<!-- Footer Section -->
 
 	<footer>
 		<p>&copy; Afeso Sunday</p>
